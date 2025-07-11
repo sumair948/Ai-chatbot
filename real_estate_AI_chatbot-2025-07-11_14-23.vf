@@ -1,0 +1,3438 @@
+{
+  "version": {
+    "_version": 13.02,
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [],
+    "components": [],
+    "creatorID": 1704118,
+    "manualSave": false,
+    "model": {},
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "6797c2110cfd6c00ccbedd9f",
+          "name": "No",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "I'm good",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "I think I'm good thanks",
+              "slots": []
+            },
+            {
+              "text": "Definitely not",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "Under no circumstances",
+              "slots": []
+            },
+            {
+              "text": "Not at all",
+              "slots": []
+            },
+            {
+              "text": "Nope, not at all",
+              "slots": []
+            },
+            {
+              "text": "No way",
+              "slots": []
+            },
+            {
+              "text": "By no means",
+              "slots": []
+            },
+            {
+              "text": "Not in the slightest",
+              "slots": []
+            },
+            {
+              "text": "No chance",
+              "slots": []
+            },
+            {
+              "text": "Absolutely not",
+              "slots": []
+            },
+            {
+              "text": "Not at all",
+              "slots": []
+            },
+            {
+              "text": "Negative",
+              "slots": []
+            },
+            {
+              "text": "Sorry, no",
+              "slots": []
+            },
+            {
+              "text": "Definitely not",
+              "slots": []
+            },
+            {
+              "text": "That's wrong",
+              "slots": []
+            },
+            {
+              "text": "Incorrect",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "No",
+              "slots": []
+            }
+          ],
+          "noteID": "zce0a0tx8",
+          "description": "Trigger this intent then the user responds negatively"
+        },
+        {
+          "key": "6797c2660cfd6c00ccbeddd1",
+          "name": "Yes",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Definitely",
+              "slots": []
+            },
+            {
+              "text": "Indeed",
+              "slots": []
+            },
+            {
+              "text": "Of course",
+              "slots": []
+            },
+            {
+              "text": "Certainly",
+              "slots": []
+            },
+            {
+              "text": "Without question",
+              "slots": []
+            },
+            {
+              "text": "Sure",
+              "slots": []
+            },
+            {
+              "text": "Definitely",
+              "slots": []
+            },
+            {
+              "text": "You bet",
+              "slots": []
+            },
+            {
+              "text": "Without a doubt",
+              "slots": []
+            },
+            {
+              "text": "By all means",
+              "slots": []
+            },
+            {
+              "text": "Agreed",
+              "slots": []
+            },
+            {
+              "text": "Absolutely",
+              "slots": []
+            },
+            {
+              "text": "That's correct",
+              "slots": []
+            },
+            {
+              "text": "Indeed",
+              "slots": []
+            },
+            {
+              "text": "Affirmative",
+              "slots": []
+            },
+            {
+              "text": "You are right",
+              "slots": []
+            },
+            {
+              "text": "Correct",
+              "slots": []
+            },
+            {
+              "text": "Yep",
+              "slots": []
+            },
+            {
+              "text": "Yes",
+              "slots": []
+            }
+          ],
+          "noteID": "zce0b0t0b",
+          "description": "Trigger this intent when the user responds positively."
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "globalNoMatch": {
+          "type": "static",
+          "prompt": {
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Sorry, I didn’t get that. Please try again."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "messageDelay": {
+          "durationMilliseconds": 500
+        },
+        "defaultVoice": "elevenlabs:eleven_turbo_v2_5:FGY2WhTYpPnrIDTdsKH5",
+        "deepgramASR": {
+          "silenceWaitMS": 10,
+          "punctuationWaitMS": 1000,
+          "partialWaitMS": 1500,
+          "interruptionWaitWords": 2,
+          "audioCue": null
+        }
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logo.png",
+        "color": "#397DFF",
+        "description": "Hi, how can I help you today?",
+        "feedback": false,
+        "image": "https://cdn.voiceflow.com/assets/logo.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Your AI agent",
+        "watermark": true,
+        "audioInterface": true
+      },
+      "platform": "webchat"
+    },
+    "programResources": {
+      "agents": {
+        "686f9580bcb3e77f67cd4ca0": {
+          "settings": {
+            "model": "claude-4-sonnet",
+            "maxTokens": 500,
+            "temperature": 0.3
+          },
+          "apiTools": [],
+          "pathTools": [],
+          "description": null,
+          "instructions": "'' Extract a location from this  user input on whare they would like to live : (Buy location) and then only respond with that result in this '' loaction '' is the greate please to move on !''",
+          "functionTools": [],
+          "webSearchTool": null,
+          "integrationTools": [],
+          "knowledgeBaseTool": {
+            "enabled": true,
+            "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+          },
+          "buttonTool": null,
+          "cardTool": null,
+          "carouselTool": null
+        }
+      },
+      "prompts": {},
+      "apiTools": {},
+      "messages": {
+        "686f89e7bcb3e77f67cd45ee": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "hello, I am sumair from hyderabad real Estate"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f8ad9bcb3e77f67cd4729": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Are you looking to Buy or sell?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f8d1abcb3e77f67cd48a2": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Greate! we know we can get you the best price on your home"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f8d89bcb3e77f67cd4906": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "First lets get some information on your home so we can sell it as soon as possible!"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f8ec5bcb3e77f67cd49d3": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Greate! we can help you to buy a new home"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f8f06bcb3e77f67cd49df": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "In what  location you want to buy a house?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f9c12bcb3e77f67cd4f75": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Thanks for sharing your details. soon our team member will reach out to you"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f96f4bcb3e77f67cd4d5c": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "what is your budgert for your home?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f97f4bcb3e77f67cd4d8b": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Thanks for letting know''!"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f9d67bcb3e77f67cd5057": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "what is the address of your house?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f9dcbbcb3e77f67cd5083": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "For what price you want to sell it ?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f9a63bcb3e77f67cd4ec0": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "my i know your name"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f9baabcb3e77f67cd4f4a": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "what is your best email adderss?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f9b23bcb3e77f67cd4ef7": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "can you give me yours phone number"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686f9e3ebcb3e77f67cd50ab": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "That's a great price! we can easily find a buyer for that"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        }
+      },
+      "integrationTools": {}
+    },
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "real estate AI chatbot",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "nonDraftResponsesMap": {},
+        "responseMessagesByDiscriminatorIDMap": {},
+        "responseDiscriminatorsByResponseIDMap": {},
+        "functionDefinitions": {},
+        "referencedResponseIDs": [
+          "686f89e7bcb3e77f67cd45ee",
+          "686f8ad9bcb3e77f67cd4729",
+          "686f8d1abcb3e77f67cd48a2",
+          "686f8d89bcb3e77f67cd4906",
+          "686f8ec5bcb3e77f67cd49d3",
+          "686f8f06bcb3e77f67cd49df",
+          "686f96f4bcb3e77f67cd4d5c",
+          "686f97f4bcb3e77f67cd4d8b",
+          "686f9a63bcb3e77f67cd4ec0",
+          "686f9b23bcb3e77f67cd4ef7",
+          "686f9baabcb3e77f67cd4f4a",
+          "686f9c12bcb3e77f67cd4f75",
+          "686f9d67bcb3e77f67cd5057",
+          "686f9dcbbcb3e77f67cd5083",
+          "686f9e3ebcb3e77f67cd50ab"
+        ],
+        "referencedAgentsIDs": [
+          "686f9580bcb3e77f67cd4ca0"
+        ],
+        "referencedAPIToolIDs": [],
+        "referencedIntegrationToolIDs": [],
+        "slotsMap": {},
+        "platform": "webchat",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "projectType": "chat",
+        "extraIntents": [],
+        "usedEventsSet": [],
+        "usedIntentsSet": [],
+        "goToIntentsSet": [],
+        "entitiesMap": {},
+        "variableMap": {},
+        "intentsMap": {},
+        "requiredEntitiesMap": {},
+        "eventsMap": {},
+        "cmsVariables": {
+          "Buy_location": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "buy_budget": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "name": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "phone_number": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "email": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "sell_address": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "sell_price": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "sessions": {
+            "isSystem": true,
+            "description": "The number of times a particular user has opened the app.",
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "description": "The user's unique ID.",
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+            "defaultValue": null
+          },
+          "locale": {
+            "isSystem": true,
+            "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "description": "The agent's last response (text/speak) in a string.",
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "description": "The object containing the last event that the user client has triggered.",
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "description": "The user's last utterance in a text string.",
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+            "defaultValue": null
+          }
+        },
+        "cmsEntities": {}
+      },
+      "settings": {},
+      "platform": "webchat"
+    },
+    "settings": {
+      "memory": {
+        "turns": 25
+      },
+      "intentClassification": {
+        "type": "rag",
+        "params": {
+          "model": "claude-3.5-haiku",
+          "temperature": 0.1
+        },
+        "promptWrapper": null
+      },
+      "voice": {
+        "failureMessage": "We’re sorry, but the call cannot be completed at this time. Please try again later.",
+        "hasCallRecording": false,
+        "tts": {
+          "provider": "elevenlabs",
+          "voice": "FGY2WhTYpPnrIDTdsKH5",
+          "model": "eleven_turbo_v2_5",
+          "settings": {}
+        }
+      },
+      "globalNoMatch": {
+        "type": "static",
+        "prompt": [
+          {
+            "text": [
+              "Sorry, I didn’t get that. Please try again."
+            ]
+          }
+        ]
+      }
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64dbb6696a8fab0013dba194"
+      }
+    ],
+    "variables": [
+      "Buy_location",
+      "buy_budget",
+      "name",
+      "phone_number",
+      "email",
+      "sell_address",
+      "sell_price",
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory"
+    ],
+    "_id": "686f88d7bcb3e77f67cd4566",
+    "updatedAt": "2025-07-10T11:22:46.104Z",
+    "publishedAt": "2024-09-27T16:54:27.996Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64dbb6696a8fab0013dba194"
+        ],
+        "rootDiagramID": "64dbb6696a8fab0013dba194",
+        "updatedBy": 1704118,
+        "updatedAt": "2025-07-10T09:33:11.449Z"
+      }
+    ],
+    "projectID": "686f88d7bcb3e77f67cd4565",
+    "rootDiagramID": "64dbb6696a8fab0013dba194",
+    "templateDiagramID": "64dbb6696a8fab0013dba195"
+  },
+  "diagrams": {
+    "64dbb6696a8fab0013dba195": {
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "nodes": {},
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1701833501,
+      "creatorID": 1704118,
+      "variables": [],
+      "menuItems": [],
+      "_id": "686f88d7bcb3e77f67cd4568",
+      "diagramID": "64dbb6696a8fab0013dba195",
+      "versionID": "686f88d7bcb3e77f67cd4566"
+    },
+    "64dbb6696a8fab0013dba194": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 136.13116646151994,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "686f8985469f037ccd5fe62d",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            -351.6816735414138,
+            136.63119334963568
+          ]
+        },
+        "686f8985469f037ccd5fe62d": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "686f8985469f037ccd5fe62e"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "686f89e7bcb3e77f67cd45ee"
+          },
+          "nodeID": "686f8985469f037ccd5fe62d",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "686f8985469f037ccd5fe62f": {
+          "type": "block",
+          "data": {
+            "name": "intro",
+            "steps": [
+              "686f8985469f037ccd5fe62d",
+              "686f8aae469f037ccd5fe636"
+            ],
+            "color": ""
+          },
+          "nodeID": "686f8985469f037ccd5fe62f",
+          "coords": [
+            -111.77676769188405,
+            -49.267965188673614
+          ]
+        },
+        "686f8aae469f037ccd5fe636": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "686f8b52469f037ccd5fe63c",
+                  "id": "686f8aae469f037ccd5fe637",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "686f8ad9bcb3e77f67cd4729"
+          },
+          "nodeID": "686f8aae469f037ccd5fe636"
+        },
+        "686f8b52469f037ccd5fe63b": {
+          "type": "buttons-v2",
+          "data": {
+            "name": "Buttons",
+            "items": [
+              {
+                "id": "cmcx7bxtu00n2357zb32d3sxs",
+                "label": [
+                  {
+                    "text": [
+                      "buy"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cmcx7c9za00nd357zto7n6c8j",
+                "label": [
+                  {
+                    "text": [
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cmcx7d2t800o6357zburuqx8p",
+                "label": [
+                  {
+                    "text": [
+                      "sell"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cmcx7ddix00oh357z0e82k6kt",
+                "label": [
+                  {
+                    "text": [
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "cmcx7bxtu00n2357zb32d3sxs": {
+                  "id": "686f8b98469f037ccd5fe642",
+                  "target": "686f8c1b469f037ccd5fe64b",
+                  "type": "",
+                  "data": {}
+                },
+                "cmcx7c9za00nd357zto7n6c8j": {
+                  "id": "686f8ba8469f037ccd5fe644",
+                  "target": null,
+                  "type": ""
+                },
+                "cmcx7d2t800o6357zburuqx8p": {
+                  "id": "686f8bcd469f037ccd5fe646",
+                  "target": "686f8c7e469f037ccd5fe653",
+                  "type": "",
+                  "data": {}
+                },
+                "cmcx7ddix00oh357z0e82k6kt": {
+                  "id": "686f8bdb469f037ccd5fe648",
+                  "target": null,
+                  "type": ""
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f8b52469f037ccd5fe63b",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "686f8b52469f037ccd5fe63c": {
+          "type": "block",
+          "data": {
+            "name": "options",
+            "steps": [
+              "686f8b52469f037ccd5fe63b"
+            ],
+            "color": ""
+          },
+          "nodeID": "686f8b52469f037ccd5fe63c",
+          "coords": [
+            394.05902001495053,
+            -169.8554560955103
+          ]
+        },
+        "686f8c1b469f037ccd5fe64a": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmcx7f59w00pl357z26s9jv9z",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "''Buy''"
+                    ]
+                  }
+                ],
+                "variableID": null
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "686f8e81469f037ccd5fe667",
+                  "id": "686f8c1b469f037ccd5fe64c",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f8c1b469f037ccd5fe64a"
+        },
+        "686f8c1b469f037ccd5fe64b": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "686f8c1b469f037ccd5fe64a"
+            ]
+          },
+          "nodeID": "686f8c1b469f037ccd5fe64b",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "686f8c7e469f037ccd5fe652": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmcx7gz1i00r6357ztqcxfm0z",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "''Sell''"
+                    ]
+                  }
+                ],
+                "variableID": null
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "686f9d23469f037ccd5fe732",
+                  "id": "686f8c7e469f037ccd5fe654",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f8c7e469f037ccd5fe652"
+        },
+        "686f8c7e469f037ccd5fe653": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "686f8c7e469f037ccd5fe652"
+            ]
+          },
+          "nodeID": "686f8c7e469f037ccd5fe653",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "686f8cdc469f037ccd5fe65a": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "686f8cdc469f037ccd5fe65b"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "686f8d1abcb3e77f67cd48a2"
+          },
+          "nodeID": "686f8cdc469f037ccd5fe65a"
+        },
+        "686f8cdc469f037ccd5fe65c": {
+          "type": "block",
+          "data": {
+            "name": "Buy flow 1",
+            "steps": [
+              "686f8cdc469f037ccd5fe65a",
+              "686f8d89469f037ccd5fe662",
+              "686f9d23469f037ccd5fe732",
+              "686f9d92469f037ccd5fe73e"
+            ],
+            "color": ""
+          },
+          "nodeID": "686f8cdc469f037ccd5fe65c",
+          "coords": [
+            1083.3910688878398,
+            -44.94045646223593
+          ]
+        },
+        "686f8d89469f037ccd5fe662": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "686f8d89bcb3e77f67cd4906",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "686f8d89469f037ccd5fe663"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f8d89469f037ccd5fe662"
+        },
+        "686f8e81469f037ccd5fe667": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "686f8e81469f037ccd5fe668"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "686f8ec5bcb3e77f67cd49d3"
+          },
+          "nodeID": "686f8e81469f037ccd5fe667"
+        },
+        "686f8e81469f037ccd5fe669": {
+          "type": "block",
+          "data": {
+            "name": "Buy Flow 1",
+            "steps": [
+              "686f8e81469f037ccd5fe667",
+              "686f8f05469f037ccd5fe670",
+              "686f8f8b469f037ccd5fe675"
+            ],
+            "color": ""
+          },
+          "nodeID": "686f8e81469f037ccd5fe669",
+          "coords": [
+            969.6770093991391,
+            -443.73392851356135
+          ]
+        },
+        "686f8f05469f037ccd5fe670": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "686f8f06bcb3e77f67cd49df",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "686f8f05469f037ccd5fe671"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f8f05469f037ccd5fe670"
+        },
+        "686f8f8b469f037ccd5fe675": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "user-reply",
+              "variableID": "686f8fe5bcb3e77f67cd4a2c"
+            },
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "686f952b469f037ccd5fe68e",
+                  "id": "686f8f8b469f037ccd5fe676",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1135.68,
+                          -203.73
+                        ]
+                      },
+                      {
+                        "point": [
+                          1271.43,
+                          -203.73
+                        ],
+                        "locked": true
+                      },
+                      {
+                        "point": [
+                          1271.43,
+                          -536.28
+                        ],
+                        "locked": true
+                      },
+                      {
+                        "point": [
+                          1356.18,
+                          -536.28
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f8f8b469f037ccd5fe675"
+        },
+        "686f952b469f037ccd5fe68e": {
+          "type": "agent",
+          "data": {
+            "name": "Untitled agent",
+            "agentID": "686f9580bcb3e77f67cd4ca0",
+            "listenForOtherTriggers": true,
+            "exitEveryConversationalTurn": false,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f952b469f037ccd5fe68e"
+        },
+        "686f952b469f037ccd5fe68f": {
+          "type": "block",
+          "data": {
+            "name": "Buy flow 2",
+            "steps": [
+              "686f96f4469f037ccd5fe695",
+              "686f952b469f037ccd5fe68e"
+            ],
+            "color": ""
+          },
+          "nodeID": "686f952b469f037ccd5fe68f",
+          "coords": [
+            1522.176349026797,
+            -691.9476966612073
+          ]
+        },
+        "686f96f4469f037ccd5fe695": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "686f96f4bcb3e77f67cd4d5c",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "686f96f4469f037ccd5fe696"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f96f4469f037ccd5fe695"
+        },
+        "686f97d2469f037ccd5fe6a2": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "686f9a49469f037ccd5fe6f8",
+                  "id": "686f97d2469f037ccd5fe6a3",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "686f97f4bcb3e77f67cd4d8b"
+          },
+          "nodeID": "686f97d2469f037ccd5fe6a2"
+        },
+        "686f97d2469f037ccd5fe6a4": {
+          "type": "block",
+          "data": {
+            "name": "buy flow 3",
+            "steps": [
+              "686f97d2469f037ccd5fe6a2"
+            ],
+            "color": ""
+          },
+          "nodeID": "686f97d2469f037ccd5fe6a4",
+          "coords": [
+            1519.2319801340946,
+            -440.2158135890949
+          ]
+        },
+        "686f9a49469f037ccd5fe6f6": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "686f9a49469f037ccd5fe6f7"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "686f9a63bcb3e77f67cd4ec0"
+          },
+          "nodeID": "686f9a49469f037ccd5fe6f6"
+        },
+        "686f9a49469f037ccd5fe6f8": {
+          "type": "block",
+          "data": {
+            "name": "user replay",
+            "steps": [
+              "686f9a49469f037ccd5fe6f6",
+              "686f9ab9469f037ccd5fe6fe"
+            ],
+            "color": ""
+          },
+          "nodeID": "686f9a49469f037ccd5fe6f8",
+          "coords": [
+            1954.6978948143496,
+            -653.1643066948104
+          ]
+        },
+        "686f9ab9469f037ccd5fe6fe": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "user-reply",
+              "variableID": "686f9af5bcb3e77f67cd4ee2"
+            },
+            "listenForOtherTriggers": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "686f9b4e469f037ccd5fe70d",
+                  "id": "686f9ab9469f037ccd5fe6ff",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f9ab9469f037ccd5fe6fe"
+        },
+        "686f9b0a469f037ccd5fe705": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "686f9b0a469f037ccd5fe706"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "686f9b23bcb3e77f67cd4ef7"
+          },
+          "nodeID": "686f9b0a469f037ccd5fe705"
+        },
+        "686f9b0a469f037ccd5fe707": {
+          "type": "block",
+          "data": {
+            "name": "New Block 8",
+            "steps": [
+              "686f9b0a469f037ccd5fe705",
+              "686f9b4e469f037ccd5fe70d"
+            ]
+          },
+          "nodeID": "686f9b0a469f037ccd5fe707",
+          "coords": [
+            1985.9478759344656,
+            -410.4144054442788
+          ]
+        },
+        "686f9b4e469f037ccd5fe70d": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "user-reply",
+              "variableID": "686f9b7dbcb3e77f67cd4f20"
+            },
+            "listenForOtherTriggers": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "686f9ba7469f037ccd5fe717",
+                  "id": "686f9b4e469f037ccd5fe70e",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f9b4e469f037ccd5fe70d"
+        },
+        "686f9ba7469f037ccd5fe717": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "686f9ba7469f037ccd5fe718"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "686f9baabcb3e77f67cd4f4a"
+          },
+          "nodeID": "686f9ba7469f037ccd5fe717"
+        },
+        "686f9ba7469f037ccd5fe719": {
+          "type": "block",
+          "data": {
+            "name": "New Block 9",
+            "steps": [
+              "686f9ba7469f037ccd5fe717",
+              "686f9bd9469f037ccd5fe71f"
+            ]
+          },
+          "nodeID": "686f9ba7469f037ccd5fe719",
+          "coords": [
+            2490.9478759344656,
+            -605.4144054442788
+          ]
+        },
+        "686f9bd9469f037ccd5fe71f": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "user-reply",
+              "variableID": "686f9bffbcb3e77f67cd4f67"
+            },
+            "listenForOtherTriggers": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "686f9c12469f037ccd5fe725",
+                  "id": "686f9bd9469f037ccd5fe720",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f9bd9469f037ccd5fe71f"
+        },
+        "686f9c12469f037ccd5fe725": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "686f9c12bcb3e77f67cd4f75",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "686f9c12469f037ccd5fe726"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f9c12469f037ccd5fe725"
+        },
+        "686f9c12469f037ccd5fe727": {
+          "type": "block",
+          "data": {
+            "name": "New Block 10",
+            "steps": [
+              "686f9c12469f037ccd5fe725",
+              "686f9c9a469f037ccd5fe72e"
+            ]
+          },
+          "nodeID": "686f9c12469f037ccd5fe727",
+          "coords": [
+            2826.0260009344656,
+            -414.5673003513551
+          ]
+        },
+        "686f9c9a469f037ccd5fe72e": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f9c9a469f037ccd5fe72e"
+        },
+        "686f9d23469f037ccd5fe732": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "686f9d23469f037ccd5fe733"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "686f9d67bcb3e77f67cd5057"
+          },
+          "nodeID": "686f9d23469f037ccd5fe732"
+        },
+        "686f9d92469f037ccd5fe73e": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "user-reply",
+              "variableID": "686f9dabbcb3e77f67cd5075"
+            },
+            "listenForOtherTriggers": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "686f9dbe469f037ccd5fe744",
+                  "id": "686f9d92469f037ccd5fe73f",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f9d92469f037ccd5fe73e"
+        },
+        "686f9dbe469f037ccd5fe744": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "686f9dbe469f037ccd5fe745"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "686f9dcbbcb3e77f67cd5083"
+          },
+          "nodeID": "686f9dbe469f037ccd5fe744"
+        },
+        "686f9dbe469f037ccd5fe746": {
+          "type": "block",
+          "data": {
+            "name": "New Block 11",
+            "steps": [
+              "686f9dbe469f037ccd5fe744",
+              "686f9dfd469f037ccd5fe74d"
+            ]
+          },
+          "nodeID": "686f9dbe469f037ccd5fe746",
+          "coords": [
+            1724.6800111520035,
+            -132.70537841017648
+          ]
+        },
+        "686f9dfd469f037ccd5fe74d": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "user-reply",
+              "variableID": "686f9e10bcb3e77f67cd508f"
+            },
+            "listenForOtherTriggers": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "686f9e23469f037ccd5fe753",
+                  "id": "686f9dfd469f037ccd5fe74e",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1890.68,
+                          13.96
+                        ]
+                      },
+                      {
+                        "point": [
+                          1914.68,
+                          13.96
+                        ]
+                      },
+                      {
+                        "point": [
+                          1914.68,
+                          117.31
+                        ]
+                      },
+                      {
+                        "point": [
+                          1751.51,
+                          117.31
+                        ]
+                      },
+                      {
+                        "point": [
+                          1751.51,
+                          220.67
+                        ]
+                      },
+                      {
+                        "point": [
+                          1775.51,
+                          220.67
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f9dfd469f037ccd5fe74d"
+        },
+        "686f9e23469f037ccd5fe753": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "686f9eec469f037ccd5fe761",
+                  "id": "686f9e23469f037ccd5fe754",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "686f9e3ebcb3e77f67cd50ab"
+          },
+          "nodeID": "686f9e23469f037ccd5fe753"
+        },
+        "686f9e23469f037ccd5fe755": {
+          "type": "block",
+          "data": {
+            "name": "New Block 12",
+            "steps": [
+              "686f9e23469f037ccd5fe753"
+            ]
+          },
+          "nodeID": "686f9e23469f037ccd5fe755",
+          "coords": [
+            1787.970893453813,
+            237.348024066471
+          ]
+        },
+        "686f9eec469f037ccd5fe760": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "686f9a49469f037ccd5fe6f8",
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686f9eec469f037ccd5fe760"
+        },
+        "686f9eec469f037ccd5fe761": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "686f9eec469f037ccd5fe760"
+            ]
+          },
+          "nodeID": "686f9eec469f037ccd5fe761",
+          "coords": [
+            0,
+            0
+          ]
+        }
+      },
+      "offsetX": 841.3453388331311,
+      "offsetY": 190.69504532029146,
+      "modified": 1701833501,
+      "creatorID": 1704118,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "686f88d7bcb3e77f67cd4569",
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "versionID": "686f88d7bcb3e77f67cd4566"
+    }
+  },
+  "flows": [],
+  "entities": [],
+  "entityVariants": [],
+  "intents": [
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 1704118,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedd9f",
+      "name": "No",
+      "createdByID": 1704118,
+      "folderID": null,
+      "description": "Trigger this intent then the user responds negatively",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd1",
+      "name": "Yes",
+      "createdByID": 1704118,
+      "folderID": null,
+      "description": "Trigger this intent when the user responds positively.",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    }
+  ],
+  "utterances": [
+    {
+      "id": "6797c2110cfd6c00ccbedda0",
+      "text": [
+        {
+          "text": [
+            "I'm good"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda1",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda2",
+      "text": [
+        {
+          "text": [
+            "I think I'm good thanks"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda3",
+      "text": [
+        {
+          "text": [
+            "Definitely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda4",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda5",
+      "text": [
+        {
+          "text": [
+            "Under no circumstances"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda6",
+      "text": [
+        {
+          "text": [
+            "Not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda7",
+      "text": [
+        {
+          "text": [
+            "Nope, not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda8",
+      "text": [
+        {
+          "text": [
+            "No way"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda9",
+      "text": [
+        {
+          "text": [
+            "By no means"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddaa",
+      "text": [
+        {
+          "text": [
+            "Not in the slightest"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddab",
+      "text": [
+        {
+          "text": [
+            "No chance"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddac",
+      "text": [
+        {
+          "text": [
+            "Absolutely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddad",
+      "text": [
+        {
+          "text": [
+            "Not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddae",
+      "text": [
+        {
+          "text": [
+            "Negative"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddaf",
+      "text": [
+        {
+          "text": [
+            "Sorry, no"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb0",
+      "text": [
+        {
+          "text": [
+            "Definitely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb1",
+      "text": [
+        {
+          "text": [
+            "That's wrong"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb2",
+      "text": [
+        {
+          "text": [
+            "Incorrect"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb3",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb4",
+      "text": [
+        {
+          "text": [
+            "No"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd2",
+      "text": [
+        {
+          "text": [
+            "Definitely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd3",
+      "text": [
+        {
+          "text": [
+            "Indeed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd4",
+      "text": [
+        {
+          "text": [
+            "Of course"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd5",
+      "text": [
+        {
+          "text": [
+            "Certainly"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd6",
+      "text": [
+        {
+          "text": [
+            "Without question"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd7",
+      "text": [
+        {
+          "text": [
+            "Sure"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd8",
+      "text": [
+        {
+          "text": [
+            "Definitely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd9",
+      "text": [
+        {
+          "text": [
+            "You bet"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddda",
+      "text": [
+        {
+          "text": [
+            "Without a doubt"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddb",
+      "text": [
+        {
+          "text": [
+            "By all means"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddc",
+      "text": [
+        {
+          "text": [
+            "Agreed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddd",
+      "text": [
+        {
+          "text": [
+            "Absolutely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddde",
+      "text": [
+        {
+          "text": [
+            "That's correct"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddf",
+      "text": [
+        {
+          "text": [
+            "Indeed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedde0",
+      "text": [
+        {
+          "text": [
+            "Affirmative"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedde1",
+      "text": [
+        {
+          "text": [
+            "You are right"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c3060cfd6c00ccbede5c",
+      "text": [
+        {
+          "text": [
+            "Correct"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c3080cfd6c00ccbede5d",
+      "text": [
+        {
+          "text": [
+            "Yep"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    },
+    {
+      "id": "6797c3090cfd6c00ccbede5e",
+      "text": [
+        {
+          "text": [
+            "Yes"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-10T09:33:11.000Z"
+    }
+  ],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [
+    {
+      "id": "686f89e7bcb3e77f67cd45ee",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T09:37:44.000Z",
+      "updatedAt": "2025-07-10T09:39:08.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f8ad9bcb3e77f67cd4729",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T09:41:46.000Z",
+      "updatedAt": "2025-07-10T09:43:20.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f8d1abcb3e77f67cd48a2",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T09:51:22.000Z",
+      "updatedAt": "2025-07-10T09:53:02.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f8d89bcb3e77f67cd4906",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T09:53:14.000Z",
+      "updatedAt": "2025-07-10T09:55:01.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f8ec5bcb3e77f67cd49d3",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T09:58:30.000Z",
+      "updatedAt": "2025-07-10T09:59:29.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f8f06bcb3e77f67cd49df",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T09:59:34.000Z",
+      "updatedAt": "2025-07-10T10:01:26.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f93f5bcb3e77f67cd4bf3",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T10:20:38.000Z",
+      "updatedAt": "2025-07-10T10:21:42.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9c12bcb3e77f67cd4f75",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T10:55:15.000Z",
+      "updatedAt": "2025-07-10T10:56:57.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f96f4bcb3e77f67cd4d5c",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T10:33:25.000Z",
+      "updatedAt": "2025-07-10T10:34:29.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f97f4bcb3e77f67cd4d8b",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T10:37:41.000Z",
+      "updatedAt": "2025-07-10T10:38:28.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9d67bcb3e77f67cd5057",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T11:00:55.000Z",
+      "updatedAt": "2025-07-10T11:01:26.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9dcbbcb3e77f67cd5083",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T11:02:36.000Z",
+      "updatedAt": "2025-07-10T11:03:05.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9a13bcb3e77f67cd4e8c",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T10:46:44.000Z",
+      "updatedAt": "2025-07-10T10:47:12.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9a63bcb3e77f67cd4ec0",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T10:48:04.000Z",
+      "updatedAt": "2025-07-10T10:48:24.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9baabcb3e77f67cd4f4a",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T10:53:31.000Z",
+      "updatedAt": "2025-07-10T10:54:12.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9b23bcb3e77f67cd4ef7",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T10:51:16.000Z",
+      "updatedAt": "2025-07-10T10:51:51.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9e3ebcb3e77f67cd50ab",
+      "name": "",
+      "createdByID": 1704118,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-10T11:04:30.000Z",
+      "updatedAt": "2025-07-10T11:06:22.000Z",
+      "updatedByID": 1704118
+    }
+  ],
+  "responseMessages": [
+    {
+      "id": "686f89e7bcb3e77f67cd45f0",
+      "discriminatorID": "686f89e7bcb3e77f67cd45ef",
+      "text": [
+        {
+          "text": [
+            "hello, I am sumair from hyderabad real Estate"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T09:37:44.000Z"
+    },
+    {
+      "id": "686f8ad9bcb3e77f67cd472b",
+      "discriminatorID": "686f8ad9bcb3e77f67cd472a",
+      "text": [
+        {
+          "text": [
+            "Are you looking to Buy or sell?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T09:41:46.000Z"
+    },
+    {
+      "id": "686f8d1abcb3e77f67cd48a4",
+      "discriminatorID": "686f8d1abcb3e77f67cd48a3",
+      "text": [
+        {
+          "text": [
+            "Greate! we know we can get you the best price on your home"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T09:51:22.000Z"
+    },
+    {
+      "id": "686f8d89bcb3e77f67cd4908",
+      "discriminatorID": "686f8d89bcb3e77f67cd4907",
+      "text": [
+        {
+          "text": [
+            "First lets get some information on your home so we can sell it as soon as possible!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T09:53:14.000Z"
+    },
+    {
+      "id": "686f8ec5bcb3e77f67cd49d5",
+      "discriminatorID": "686f8ec5bcb3e77f67cd49d4",
+      "text": [
+        {
+          "text": [
+            "Greate! we can help you to buy a new home"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T09:58:30.000Z"
+    },
+    {
+      "id": "686f8f06bcb3e77f67cd49e1",
+      "discriminatorID": "686f8f06bcb3e77f67cd49e0",
+      "text": [
+        {
+          "text": [
+            "In what  location you want to buy a house?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T09:59:34.000Z"
+    },
+    {
+      "id": "686f93f5bcb3e77f67cd4bf5",
+      "discriminatorID": "686f93f5bcb3e77f67cd4bf4",
+      "text": [
+        {
+          "text": [
+            ""
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T10:20:38.000Z"
+    },
+    {
+      "id": "686f96f4bcb3e77f67cd4d5e",
+      "discriminatorID": "686f96f4bcb3e77f67cd4d5d",
+      "text": [
+        {
+          "text": [
+            "what is your budgert for your home?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T10:33:25.000Z"
+    },
+    {
+      "id": "686f97f4bcb3e77f67cd4d8d",
+      "discriminatorID": "686f97f4bcb3e77f67cd4d8c",
+      "text": [
+        {
+          "text": [
+            "Thanks for letting know''!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T10:37:41.000Z"
+    },
+    {
+      "id": "686f9a13bcb3e77f67cd4e8e",
+      "discriminatorID": "686f9a13bcb3e77f67cd4e8d",
+      "text": [
+        {
+          "text": [
+            "my i know your name"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T10:46:44.000Z"
+    },
+    {
+      "id": "686f9a63bcb3e77f67cd4ec2",
+      "discriminatorID": "686f9a63bcb3e77f67cd4ec1",
+      "text": [
+        {
+          "text": [
+            "my i know your name"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T10:48:04.000Z"
+    },
+    {
+      "id": "686f9baabcb3e77f67cd4f4c",
+      "discriminatorID": "686f9baabcb3e77f67cd4f4b",
+      "text": [
+        {
+          "text": [
+            "what is your best email adderss?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T10:53:31.000Z"
+    },
+    {
+      "id": "686f9b23bcb3e77f67cd4ef9",
+      "discriminatorID": "686f9b23bcb3e77f67cd4ef8",
+      "text": [
+        {
+          "text": [
+            "can you give me yours phone number"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T10:51:16.000Z"
+    },
+    {
+      "id": "686f9c12bcb3e77f67cd4f77",
+      "discriminatorID": "686f9c12bcb3e77f67cd4f76",
+      "text": [
+        {
+          "text": [
+            "Thanks for sharing your details. soon our team member will reach out to you"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T10:55:15.000Z"
+    },
+    {
+      "id": "686f9d67bcb3e77f67cd5059",
+      "discriminatorID": "686f9d67bcb3e77f67cd5058",
+      "text": [
+        {
+          "text": [
+            "what is the address of your house?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T11:00:55.000Z"
+    },
+    {
+      "id": "686f9dcbbcb3e77f67cd5085",
+      "discriminatorID": "686f9dcbbcb3e77f67cd5084",
+      "text": [
+        {
+          "text": [
+            "For what price you want to sell it ?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T11:02:36.000Z"
+    },
+    {
+      "id": "686f9e3ebcb3e77f67cd50ad",
+      "discriminatorID": "686f9e3ebcb3e77f67cd50ac",
+      "text": [
+        {
+          "text": [
+            "That's a great price! we can easily find a buyer for that"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-10T11:04:30.000Z"
+    }
+  ],
+  "responseDiscriminators": [
+    {
+      "id": "686f9b23bcb3e77f67cd4ef8",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f9b23bcb3e77f67cd4ef7",
+      "variantOrder": [
+        "686f9b23bcb3e77f67cd4ef9"
+      ],
+      "createdAt": "2025-07-10T10:51:16.000Z"
+    },
+    {
+      "id": "686f9c12bcb3e77f67cd4f76",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f9c12bcb3e77f67cd4f75",
+      "variantOrder": [
+        "686f9c12bcb3e77f67cd4f77"
+      ],
+      "createdAt": "2025-07-10T10:55:15.000Z"
+    },
+    {
+      "id": "686f9d67bcb3e77f67cd5058",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f9d67bcb3e77f67cd5057",
+      "variantOrder": [
+        "686f9d67bcb3e77f67cd5059"
+      ],
+      "createdAt": "2025-07-10T11:00:55.000Z"
+    },
+    {
+      "id": "686f9dcbbcb3e77f67cd5084",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f9dcbbcb3e77f67cd5083",
+      "variantOrder": [
+        "686f9dcbbcb3e77f67cd5085"
+      ],
+      "createdAt": "2025-07-10T11:02:36.000Z"
+    },
+    {
+      "id": "686f9e3ebcb3e77f67cd50ac",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f9e3ebcb3e77f67cd50ab",
+      "variantOrder": [
+        "686f9e3ebcb3e77f67cd50ad"
+      ],
+      "createdAt": "2025-07-10T11:04:30.000Z"
+    },
+    {
+      "id": "686f89e7bcb3e77f67cd45ef",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f89e7bcb3e77f67cd45ee",
+      "variantOrder": [
+        "686f89e7bcb3e77f67cd45f0"
+      ],
+      "createdAt": "2025-07-10T09:37:44.000Z"
+    },
+    {
+      "id": "686f8ad9bcb3e77f67cd472a",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f8ad9bcb3e77f67cd4729",
+      "variantOrder": [
+        "686f8ad9bcb3e77f67cd472b"
+      ],
+      "createdAt": "2025-07-10T09:41:46.000Z"
+    },
+    {
+      "id": "686f8d1abcb3e77f67cd48a3",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f8d1abcb3e77f67cd48a2",
+      "variantOrder": [
+        "686f8d1abcb3e77f67cd48a4"
+      ],
+      "createdAt": "2025-07-10T09:51:22.000Z"
+    },
+    {
+      "id": "686f8d89bcb3e77f67cd4907",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f8d89bcb3e77f67cd4906",
+      "variantOrder": [
+        "686f8d89bcb3e77f67cd4908"
+      ],
+      "createdAt": "2025-07-10T09:53:14.000Z"
+    },
+    {
+      "id": "686f8ec5bcb3e77f67cd49d4",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f8ec5bcb3e77f67cd49d3",
+      "variantOrder": [
+        "686f8ec5bcb3e77f67cd49d5"
+      ],
+      "createdAt": "2025-07-10T09:58:30.000Z"
+    },
+    {
+      "id": "686f8f06bcb3e77f67cd49e0",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f8f06bcb3e77f67cd49df",
+      "variantOrder": [
+        "686f8f06bcb3e77f67cd49e1"
+      ],
+      "createdAt": "2025-07-10T09:59:34.000Z"
+    },
+    {
+      "id": "686f93f5bcb3e77f67cd4bf4",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f93f5bcb3e77f67cd4bf3",
+      "variantOrder": [
+        "686f93f5bcb3e77f67cd4bf5"
+      ],
+      "createdAt": "2025-07-10T10:20:38.000Z"
+    },
+    {
+      "id": "686f96f4bcb3e77f67cd4d5d",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f96f4bcb3e77f67cd4d5c",
+      "variantOrder": [
+        "686f96f4bcb3e77f67cd4d5e"
+      ],
+      "createdAt": "2025-07-10T10:33:25.000Z"
+    },
+    {
+      "id": "686f97f4bcb3e77f67cd4d8c",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f97f4bcb3e77f67cd4d8b",
+      "variantOrder": [
+        "686f97f4bcb3e77f67cd4d8d"
+      ],
+      "createdAt": "2025-07-10T10:37:41.000Z"
+    },
+    {
+      "id": "686f9a13bcb3e77f67cd4e8d",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f9a13bcb3e77f67cd4e8c",
+      "variantOrder": [
+        "686f9a13bcb3e77f67cd4e8e"
+      ],
+      "createdAt": "2025-07-10T10:46:44.000Z"
+    },
+    {
+      "id": "686f9a63bcb3e77f67cd4ec1",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f9a63bcb3e77f67cd4ec0",
+      "variantOrder": [
+        "686f9a63bcb3e77f67cd4ec2"
+      ],
+      "createdAt": "2025-07-10T10:48:04.000Z"
+    },
+    {
+      "id": "686f9baabcb3e77f67cd4f4b",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686f9baabcb3e77f67cd4f4a",
+      "variantOrder": [
+        "686f9baabcb3e77f67cd4f4c"
+      ],
+      "createdAt": "2025-07-10T10:53:31.000Z"
+    }
+  ],
+  "variables": [
+    {
+      "id": "686f8fe5bcb3e77f67cd4a2c",
+      "name": "Buy_location",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T10:03:18.000Z",
+      "updatedAt": "2025-07-10T10:03:18.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f97a5bcb3e77f67cd4d75",
+      "name": "buy_budget",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T10:36:22.000Z",
+      "updatedAt": "2025-07-10T10:36:22.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9af5bcb3e77f67cd4ee2",
+      "name": "name",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T10:50:29.000Z",
+      "updatedAt": "2025-07-10T10:50:29.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9b7dbcb3e77f67cd4f20",
+      "name": "phone_number",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T10:52:45.000Z",
+      "updatedAt": "2025-07-10T10:52:45.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9bffbcb3e77f67cd4f67",
+      "name": "email",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T10:54:56.000Z",
+      "updatedAt": "2025-07-10T10:54:56.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9dabbcb3e77f67cd5075",
+      "name": "sell_address",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T11:02:04.000Z",
+      "updatedAt": "2025-07-10T11:02:04.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9e10bcb3e77f67cd508f",
+      "name": "sell_price",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T11:03:45.000Z",
+      "updatedAt": "2025-07-10T11:03:45.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "locale",
+      "name": "locale",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 1704118,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    }
+  ],
+  "workflows": [
+    {
+      "id": "66df755be937eb000784abb2",
+      "name": "Start workflow",
+      "createdByID": 1704118,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "assigneeID": null,
+      "description": "",
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T11:10:38.000Z",
+      "updatedByID": 1704118
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "prompts": [],
+  "promptMessages": [],
+  "events": [],
+  "agents": [
+    {
+      "id": "67db2b56cbe88befffef4623",
+      "name": "Customer support specialist",
+      "createdByID": 1704118,
+      "folderID": null,
+      "settings": {},
+      "description": "An agent template for resolving issues and ensuring customer satisfaction with technical skill and empathy.",
+      "instructions": [
+        {
+          "text": [
+            "# Customer Service & Support Agent Prompt\n\n## Identity & Purpose\n\nYou are Laura, a customer service voice assistant for AcmeSolutions. Your primary purpose is to help customers resolve issues with their products, answer questions about services, and ensure a satisfying support experience.\n\n## Voice & Persona\n\n### Personality\n- Sound friendly, patient, and knowledgeable without being condescending\n- Use a conversational tone with natural speech patterns, including occasional \"hmm\" or \"let me think about that\" to simulate thoughtfulness\n- Speak with confidence but remain humble when you don't know something\n- Demonstrate genuine concern for customer issues\n\n### Speech Characteristics\n- Use contractions naturally (I'm, we'll, don't, etc.)\n- Vary your sentence length and complexity to sound natural\n- Include occasional filler words like \"actually\" or \"essentially\" for authenticity\n- Speak at a moderate pace, slowing down for complex information\n\n## Conversation Flow\n\n### Introduction\nStart with: \"Hi there, this is Laura from AcmeSolutions customer support. How can I help you today?\"\n\nIf the customer sounds frustrated or mentions an issue immediately, acknowledge their feelings: \"I understand that's frustrating. I'm here to help get this sorted out for you.\"\n\n### Issue Identification\n1. Use open-ended questions initially: \"Could you tell me a bit more about what's happening with your [product/service]?\"\n2. Follow with specific questions to narrow down the issue: \"When did you first notice this problem?\" or \"Does this happen every time you use it?\"\n3. Confirm your understanding: \"So if I understand correctly, your [product] is [specific issue] when you [specific action]. Is that right?\"\n\n### Troubleshooting\n1. Start with simple solutions: \"Let's try a few basic troubleshooting steps first.\"\n2. Provide clear step-by-step instructions: \"First, I'd like you to... Next, could you...\"\n3. Check progress at each step: \"What are you seeing now on your screen?\"\n4. Explain the purpose of each step: \"We're doing this to rule out [potential cause].\"\n\n### Resolution\n1. For resolved issues: \"Great! I'm glad we were able to fix that issue. Is everything working as expected now?\"\n2. For unresolved issues: \"Since we haven't been able to resolve this with basic troubleshooting, I'd recommend [next steps].\"\n3. Offer additional assistance: \"Is there anything else about your [product/service] that I can help with today?\"\n\n### Closing\nEnd with: \"Thank you for contacting AcmeSolutions support. If you have any other questions or if this issue comes up again, please don't hesitate to call us back. Have a great day!\"\n\n## Response Guidelines\n\n- Keep responses conversational and under 30 words when possible\n- Ask only one question at a time to avoid overwhelming the customer\n- Use explicit confirmation for important information: \"So the email address on your account is example@email.com, is that correct?\"\n- Avoid technical jargon unless the customer uses it first, then match their level of technical language\n- Express empathy for customer frustrations: \"I completely understand how annoying that must be.\"\n\n## Scenario Handling\n\n### For Common Technical Issues\n1. Password resets: Walk customers through the reset process, explaining each step\n2. Account access problems: Verify identity using established protocols, then troubleshoot login issues\n3. Product malfunction: Gather specific details about what's happening, when it started, and what changes were made recently\n4. Billing concerns: Verify account details first, explain charges clearly, and offer to connect with billing specialists if needed\n\n### For Frustrated Customers\n1. Let them express their frustration without interruption\n2. Acknowledge their feelings: \"I understand you're frustrated, and I would be too in this situation.\"\n3. Take ownership: \"I'm going to personally help get this resolved for you.\"\n4. Focus on solutions rather than dwelling on the problem\n5. Provide clear timeframes for resolution\n\n### For Complex Issues\n1. Break down complex problems into manageable components\n2. Address each component individually\n3. Provide a clear explanation of the issue in simple terms\n4. If technical expertise is required: \"This seems to require specialized assistance. Would it be okay if I connect you with our technical team who can dive deeper into this issue?\"\n\n### For Feature/Information Requests\n1. Provide accurate, concise information about available features\n2. If uncertain about specific details: \"That's a good question about [feature]. To give you the most accurate information, let me check our latest documentation on that.\"\n3. For unavailable features: \"Currently, our product doesn't have that specific feature. However, we do offer [alternative] which can help accomplish [similar goal].\"\n\n## Knowledge Base\n\n### Product Information\n- AcmeSolutions offers software services for productivity, security, and business management\n- Our flagship products include TaskMaster Pro (productivity), SecureShield (security), and BusinessFlow (business management)\n- All products have desktop and mobile applications\n- Subscription tiers include Basic, Premium, and Enterprise\n- Support hours are Monday through Friday, 8am to 8pm Eastern Time, and Saturday 9am to 5pm\n\n### Common Solutions\n- Most connectivity issues can be resolved by signing out completely, clearing browser cache, and signing back in\n- Performance problems often improve after restarting the application and ensuring the operating system is updated\n- Data synchronization issues typically resolve by checking internet connection and forcing a manual sync\n- Most mobile app problems can be fixed by updating to the latest version or reinstalling the application\n\n### Account Management\n- Customers can upgrade or downgrade their subscription through their account dashboard\n- Billing occurs on the same day each month based on signup date\n- Payment methods can be updated through the account settings page\n- Free trials last for 14 days and require payment information to activate\n\n### Limitations\n- You cannot process refunds directly but can escalate to the billing department\n- You cannot make changes to account ownership\n- You cannot provide technical support for third-party integrations not officially supported\n- You cannot access or view customer passwords for security reasons\n\n## Response Refinement\n\n- When explaining technical concepts, use analogies when helpful: \"Think of this feature like an automatic filing system for your digital documents.\"\n- For step-by-step instructions, number each step clearly and confirm completion before moving to the next\n- When discussing pricing or policies, be transparent and direct while maintaining a friendly tone\n- If the customer needs to wait (for system checks, etc.), explain why and provide time estimates\n\n## Call Management\n\n- If background noise interferes with communication: \"I'm having a little trouble hearing you clearly. Would it be possible to move to a quieter location or adjust your microphone?\"\n- If you need time to locate information: \"I'd like to find the most accurate information for you. Can I put you on a brief hold while I check our latest documentation on this?\"\n- If the call drops, attempt to reconnect and begin with: \"Hi there, this is Laura again from AcmeSolutions. I apologize for the disconnection. Let's continue where we left off with [last topic].\"\n\nRemember that your ultimate goal is to resolve customer issues efficiently while creating a positive, supportive experience that reinforces their trust in AcmeSolutions."
+          ]
+        }
+      ],
+      "pathToolOrder": [],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Triggered the knowledge base when you don't know the answer to a question."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "createdAt": "2025-07-10T09:33:11.000Z",
+      "updatedAt": "2025-07-10T09:33:11.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f90aebcb3e77f67cd4a5c",
+      "name": "Untitled agent",
+      "createdByID": 1704118,
+      "folderID": null,
+      "settings": {},
+      "description": null,
+      "instructions": null,
+      "pathToolOrder": [
+        "686f9148bcb3e77f67cd4a90"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "createdAt": "2025-07-10T10:06:38.000Z",
+      "updatedAt": "2025-07-10T10:09:13.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9233bcb3e77f67cd4ac0",
+      "name": "Untitled agent",
+      "createdByID": 1704118,
+      "folderID": null,
+      "settings": {},
+      "description": null,
+      "instructions": [
+        {
+          "text": [
+            "Extract a loaction from this user input on where thy would like to live ; (Buy location) and then onely respond with that result in thes ''location'' is the greate please to move on''."
+          ]
+        }
+      ],
+      "pathToolOrder": [],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "createdAt": "2025-07-10T10:13:07.000Z",
+      "updatedAt": "2025-07-10T10:17:23.000Z",
+      "updatedByID": 1704118
+    },
+    {
+      "id": "686f9580bcb3e77f67cd4ca0",
+      "name": "Untitled agent",
+      "createdByID": 1704118,
+      "folderID": null,
+      "settings": {},
+      "description": null,
+      "instructions": [
+        {
+          "text": [
+            "'' Extract a location from this  user input on whare they would like to live : (Buy location) and then only respond with that result in this '' loaction '' is the greate please to move on !''"
+          ]
+        }
+      ],
+      "pathToolOrder": [],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "createdAt": "2025-07-10T10:27:13.000Z",
+      "updatedAt": "2025-07-10T10:32:16.000Z",
+      "updatedByID": 1704118
+    }
+  ],
+  "agentAPITools": [],
+  "agentPathTools": [
+    {
+      "id": "686f9148bcb3e77f67cd4a90",
+      "name": "",
+      "agentID": "686f90aebcb3e77f67cd4a5c",
+      "description": "",
+      "variableOrder": [],
+      "createdAt": "2025-07-10T10:09:13.000Z"
+    }
+  ],
+  "agentFunctionTools": [],
+  "agentIntegrationTools": [],
+  "agentPathToolVariables": [],
+  "apiTools": [],
+  "apiToolInputVariables": [],
+  "integrationTools": [],
+  "functions": [],
+  "functionPaths": [],
+  "functionVariables": [],
+  "project": {
+    "type": "chat",
+    "name": "real estate AI chatbot",
+    "image": "https://cm4-production-assets.s3.amazonaws.com/1729190521409-square-onyx-1024.jpg",
+    "teamID": "vrk18V3xE3",
+    "members": [],
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 1704118,
+    "updatedBy": 1704118,
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "privacy": "public",
+    "apiPrivacy": "public",
+    "_id": "686f88d7bcb3e77f67cd4565",
+    "updatedAt": "2025-07-10T11:16:22.779Z",
+    "devVersion": "686f88d7bcb3e77f67cd4566",
+    "liveVersion": "686f88d7bcb3e77f67cd4567"
+  },
+  "_version": "1.2",
+  "secrets": [],
+  "variableStates": []
+}
